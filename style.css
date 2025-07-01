@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  padding: 20px;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: inherit;
+  z-index: 10;
+}
+
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(20px);
+  transform: scale(1.1);
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+body.dark .container {
+  background-color: #1e1e1e;
+}
+
+.player-img img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #666;
+}
+body.dark h3 {
+  color: #aaa;
+}
+
+.player-progress {
+  background-color: #ddd;
+  border-radius: 6px;
+  height: 6px;
+  margin: 20px 0 8px;
+  cursor: pointer;
+  position: relative;
+}
+.progress {
+  background-color: #333;
+  height: 100%;
+  width: 0%;
+  border-radius: 6px;
+  transition: width 0.3s;
+}
+.music-duration {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.player-controls i {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.2s;
+}
+.play-button {
+  font-size: 28px;
+}
+body.dark .player-controls i {
+  color: #ccc;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+.volume-control input[type=range] {
+  width: 100%;
+}
+input[type="range"] {
+  appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  background: #ccc;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+}
+body.dark input[type="range"] {
+  background: #444;
+}
+body.dark input[type="range"]::-webkit-slider-thumb {
+  background: #eee;
+}
+
+.playlist {
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.playlist-item {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.playlist-item:hover {
+  background-color: #eee;
+}
+.playlist-item.active {
+  background-color: #ccc;
+  font-weight: bold;
+}
+body.dark .playlist-item:hover {
+  background-color: #333;
+}
+body.dark .playlist-item.active {
+  background-color: #555;
+}
