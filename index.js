@@ -26,21 +26,27 @@ const songs = [
   },
   {
     path: 'assets/1.mp3',
-    displayName: 'Konsekuens',
-    artist: '.Feast',
-    cover: 'assets/1.jpg'
+    displayName: 'Pastikan Riuh Akhiri Malamu',
+    artist: 'Perunggu',
+    cover: 'assets/0.jpg'
   },
   {
-    path: 'assets/2.m4a',
-    displayName: "O'Tuan",
+    path: 'assets/2.mp3',
+    displayName: 'Konsekuens',
     artist: '.Feast',
     cover: 'assets/2.jpg'
   },
   {
-    path: 'assets/3.mp3',
+    path: 'assets/3.m4a',
+    displayName: "O'Tuan",
+    artist: '.Feast',
+    cover: 'assets/3jpg'
+  },
+  {
+    path: 'assets/4.mp3',
     displayName: "Kelelawar",
     artist: '.Feast',
-    cover: 'assets/3.jpg'
+    cover: 'assets/4.jpg'
   }
 ];
 
