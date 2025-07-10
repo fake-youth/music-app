@@ -40,7 +40,7 @@ const songs = [
     path: 'assets/3.m4a',
     displayName: "O'Tuan",
     artist: '.Feast',
-    cover: 'assets/3jpg'
+    cover: 'assets/3.jpg'
   },
   {
     path: 'assets/4.mp3',
